@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokumentinformationen %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\trtitle}{App f\"ur Dienstabmachungen}
+\newcommand{\scrartclScrreprt}{scrartcl}
+\include{header}
+
+\title{\trtitle}
+\subtitle{(Planung)}
+\author{(Philipp Riedel \& co)}
+
+% Möglichst keine Ergänzungen hier, sondern in header.tex
+\begin{document} 
+ 
+
+% Römische Nummerierung für Sonderseiten, wie Verzeichnisse und Anhang
+\pagenumbering{Roman}
+
+% Titelblatt
+
+\maketitle
+
+
+% Inhaltsverzeichnis
+\tableofcontents
+\thispagestyle{empty}
+% Nummerierung von roemisch auf arabisch umschalten und roemische
+% zwischenspeichern
+\newpage
+\pagenumbering{arabic}
+
+
+\include{./filesPlanung/einleitung}
+\include{./filesPlanung/vorabklaerungen}
+\include{./filesPlanung/anforderungen}
+
+% Nummerierung wieder auf roemisch umschalten
+%\newpage
+%\pagenumbering{Roman}
+%\setcounter{page}{\value{roemisch}}
+
+
+
+\end{document}

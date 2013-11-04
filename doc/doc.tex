@@ -4,10 +4,11 @@
 
 
 \newcommand{\trtitle}{App f\"ur Dienstabmachungen}
+\newcommand{\scrartclScrreprt}{scrreprt}
 \include{header}
 
 \title{\trtitle}
-\subtitle{(Pflichtenheft)}
+\subtitle{(Dokumentation)}
 \author{(Philipp Riedel \& co)}
 
 % Möglichst keine Ergänzungen hier, sondern in header.tex
@@ -30,16 +31,39 @@
 \newpage
 \pagenumbering{arabic}
 
-
-
-
-%\include{./Ideen/Ideen}
+\include{./filesDoc/einleitung}
+\include{./filesDoc/entscheide}
+\include{./filesDoc/software}
 
 % Nummerierung wieder auf roemisch umschalten
 %\newpage
 %\pagenumbering{Roman}
 %\setcounter{page}{\value{roemisch}}
 
+
+
+\chapter{Verzeichnisse}
+% Abbildungsverzeichnis
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoffigures
+
+% Tabellenverzeichnis
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
+\listoftables
+
+% Literaturverzeichnis
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+%\renewcommand{\refname}{Literaturverzeichnis}
+\bibliographystyle{natdin}	%gerplain: [1], geralpha: [Bjar05]
+\bibliography{./filesDoc/Literatur}
+
+
+% Appendix, falls vorhanden
+\newpage
+\numberwithin{table}{chapter}
+\begin{appendix}
+\input{./filesDoc/anhang}
+\end{appendix}
 
 
 \end{document}
