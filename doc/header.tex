@@ -1,0 +1,61 @@
+%!TEX TS-program = pdflatex
+\documentclass[fontsize=12pt]{scrreprt}
+\usepackage[utf8]{inputenc}
+
+\usepackage[numbers]{natbib}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman, num, orig]{isodate}
+\usepackage[ngerman]{babel}   
+\monthyearsepgerman{\,}{\,} 
+
+
+
+
+% Kompaktes Itemize
+\usepackage{enumitem}
+\newlist{compactitemize}{itemize}{1}
+\setlist[compactitemize]{label=\textbullet, nosep, leftmargin=10pt}
+
+\usepackage{layout}
+\setlength{\parindent}{0em}
+
+\usepackage{amssymb,amsmath,fancybox,graphicx,wrapfig,color,lastpage,fancyhdr,verbatim,epstopdf,a4wide}
+
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{epsfig}
+\usepackage{pst-pdf}
+\usepackage{pst-all}
+\usepackage{supertabular}{\tiny }
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{footnote}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{etex}
+\usepackage{pdfpages}
+\usepackage{color} 
+\usepackage{placeins} 
+\usepackage{booktabs}
+\usepackage{pdflscape}
+
+\usepackage[hyphens]{url}	%URL handling und darstellung
+\urlstyle{tt}
+
+\usepackage[pdftitle={\trtitle},
+						pdfauthor={Philipp Riedel},
+						pdfcreator={TexMate, LaTeX with hyperref},
+						pdfsubject={\trtitle},
+						plainpages=false,
+						pdfpagelabels,
+						colorlinks,
+						linkcolor=black,
+						filecolor=black,
+						citecolor=black,
+						urlcolor=blue]{hyperref}
+
+\usepackage[makeroom]{cancel}
+\usepackage{array}
+\usepackage{trfsigns}
+\usepackage{textcomp}

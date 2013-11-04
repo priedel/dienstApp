@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokumentinformationen %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\trtitle}{App f\"ur Dienstabmachungen}
+\include{header}
+
+\title{\trtitle}
+\subtitle{(Pflichtenheft)}
+\author{(Philipp Riedel \& co)}
+
+% Möglichst keine Ergänzungen hier, sondern in header.tex
+\begin{document} 
+ 
+
+% Römische Nummerierung für Sonderseiten, wie Verzeichnisse und Anhang
+\pagenumbering{Roman}
+
+% Titelblatt
+
+\maketitle
+
+
+% Inhaltsverzeichnis
+\tableofcontents
+\thispagestyle{empty}
+% Nummerierung von roemisch auf arabisch umschalten und roemische
+% zwischenspeichern
+\newpage
+\pagenumbering{arabic}
+
+
+
+
+%\include{./Ideen/Ideen}
+
+% Nummerierung wieder auf roemisch umschalten
+%\newpage
+%\pagenumbering{Roman}
+%\setcounter{page}{\value{roemisch}}
+
+
+
+\end{document}
