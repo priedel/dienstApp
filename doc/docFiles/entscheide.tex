@@ -1,12 +1,12 @@
 
-\chapter{Anforderungen}
+\section{Anforderungen}
 
 \begin{itemize}
 \item Standorthandling
 \begin{itemize}
 \item Wenn es möglich ist bei iOS und/oder Android ein generelles blockieren der Preisgabe des Standortes einzustellen muss der User die Möglichkeit bekommen manuelle seinen Standort einzugeben
 \end{itemize}
-\item Ein geschicktes Zeithydxsandling, ähnlich dem Trolley-System.
+\item Ein geschicktes Zeit Handling, ähnlich dem Trolley-System.
 \item Verabredung Handling, integriert beim Zeit Handling.
 \item Auch bei Taskabschuss mit einem Taskmanagertool muss die Applikation ansprechbar bleiben, damit eine neu eingetroffene Zeitübereinstimmung ein Pop-up generieren kann.
 \end{itemize}
@@ -14,23 +14,24 @@
 
 
 
-\section{Fragen zu weiteren Anforderungen und Bestimmungen}
+\subsection{Fragen zu weiteren Anforderungen und Bestimmungen}
 
-\subsection{Technische}
+\subsubsection{Technische}
+
 \begin{tabularx}{\textwidth}{X|X}
 Frage & Entscheid \\\hline
 Ablehnen wie handeln & flag setzten damit nicht gleiche Zuteilung vorgenommen wird\\\hline
-eine Verabredungskommunikation die den Dialog standardisiert und vereinfacht bereitstellen & ja möglichst viel in Zeithandling integrieren\\\hline
+eine Verabredungskommunikation die den Dialog standardisiert und vereinfacht bereitstellen & ja möglichst viel in Zeit Handling integrieren\\\hline
 Handling von keine Reaktion & Wenn eine neue Übereinstimmung hinzukommt alte löschen (mit Mitteilung) falls die alte länger als $t_tol$ nicht bestätigt wurde\\\hline
 Handling von $n_v>2$ bei geraden und ungeraden $n_v$ & mit Gruppen Ansatz lösen \\\hline
-Verabredungsabwicklung & möglichst viel in Zeithandling integrieren\\\hline
+Verabredungsabwicklung & möglichst viel in Zeit Handling integrieren\\\hline
 Statistik mitführen & ja nur für admin\\\hline
 Zeitwahl auf x min begrenzen & nein, mit vorgegebenem Zeitraster arbeiten, ähnlich wie bei trolley\\\hline
 Wählbar ob Verabredungskommunikation oder Telefonnummer Bekanntgabe & nein, nur Verabredungskommunikation wenn nicht bereits durch Workflow gemeistert werden kann\\
 \end{tabularx}
 
 
-\subsection{Theokratische}
+\subsubsection{Theokratische}
 
 \begin{tabularx}{\textwidth}{X|X}
 Frage & Entscheid \\\hline

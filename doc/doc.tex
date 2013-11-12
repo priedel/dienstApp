@@ -4,7 +4,7 @@
 
 
 \newcommand{\trtitle}{App f\"ur Dienstabmachungen}
-\newcommand{\scrartclScrreprt}{scrreprt}
+\newcommand{\scrartclScrreprt}{scrartcl}
 \include{header}
 
 \title{\trtitle}
@@ -43,7 +43,7 @@
 
 
 
-\chapter{Verzeichnisse}
+\section{Verzeichnisse}
 % Abbildungsverzeichnis
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}
 \listoffigures
@@ -61,7 +61,7 @@
 
 % Appendix, falls vorhanden
 \newpage
-\numberwithin{table}{chapter}
+\numberwithin{table}{section}
 \begin{appendix}
 \input{./docFiles/anhang}
 \end{appendix}

@@ -1,6 +1,6 @@
-\chapter{Vorabklärungen}
+\section{Vorabklärungen}
 
-\section{Zusammenfassung}
+\subsection{Zusammenfassung}
 \begin{tabularx}{\textwidth}{lX}
 Task  & Stand\\\hline \vspace{-0.5em}&\\\vspace{0.5em}
 Bedürfnis & das Bedürfnis ist vorhanden \\\vspace{0.5em}
@@ -11,17 +11,17 @@ Datenbank &\texttodo{Anna-Nina SQL OK? bessere varianten?  SQL Server Express ge
 Sicherheit & Manuelle Profile Freigabe mit 3 Pionieren als Referenz. Keine Verschlüsselung da keine sensitiven Daten.\\
 \end{tabularx}
 
-\section{Bedürfnis}
+\subsection{Bedürfnis}
 
 \paragraph{Wie gross ist das Bedürfnis nach dieser Applikation} bei vielen Verkündigern kommen Absagen relativ häufig vor. Bei Pionieren 1 bis 2 mal pro Woche. Auch das finden von Abmachungen unter der Woche kann eine Herausforderung sein.
 
-\section{Teilnahme Abschätzung für Gelingen}
+\subsection{Teilnahme Abschätzung für Gelingen}
 \paragraph{Wie viele Absagen braucht es pro Woche damit die Applikation einen Nutzen hat} Es gibt pro Tag in etwa die drei Hauptterminzeiten Morgen, Nachmittag und Abend. Samstag Abend wird weggelassen und sonntags zählt nur als eine Terminzeit. Somit ergeben sich 18 Termine pro Woche. Damit es öfters vorkommt das bei den Hauptterminzeiten eine Übereinstimmung mit $\pm\varepsilon$ gegeben ist, sollte mit 60 bis 100 Absagen oder nicht Finden einer Abmachung pro Woche gerechnet werden. Dies sollte mit einer Teilnehmerzahl $n \geqslant 100$ und davon $n_p \geqslant 50$ Pionieren erreicht werden.
 
-\section{Aufwand}
+\subsection{Aufwand}
 \paragraph{Aufwand für Programmierung und Unterhalt} Der Aufwand muss im Verhältnis zum Nutzen stehen. Die Datenbank Implementation benötigt keinen grossen Zeitaufwand. Für die Applikation und das GUI wird erst später eine Abschätzung erfolgen, wenn die Struktur genauer skizziert wurde.
 
-\section{Installation der App}
+\subsection{Installation der App}
 \paragraph{Bedignungen für die Installation auf Android - und iOS Systeme}
 \begin{itemize}
 \item Bei einem Android System ist es kein Problem die Applikation auf ein File-Server zum Download anzubieten. Der Nutzer muss nur bei der Installation zustimmen, dass er die unbekannte App als vertrauenswürdig hält.
@@ -29,12 +29,12 @@ Sicherheit & Manuelle Profile Freigabe mit 3 Pionieren als Referenz. Keine Versc
 \end{itemize}
 Trotz Mehraufwand und zusätzlichen Kosten muss wegen der hohen Anzahl von iPhone Besitzern auch für iOS eine App zur Verfügung gestellt werden.
 
-\section{Datenbank}
+\subsection{Datenbank}
 \paragraph{Nutzen und Aufwand einer Datenbank}\begin{itemize}
 \item Da Profile erstellt werden müssen, damit eine effiziente Zuordnung gemacht werden kann muss eine Datenbank Struktur vorhanden sein.
 \item SQL Server Express bietet einen gratis Dienst für das Ablegen der Datenbank \cite{SQL}.
 \item Laut Esther kann mit einer sehr groben Abschätzung bei dieser Komplexität mit 1 bis 2 Arbeitstagen gerechnet werden.
 \end{itemize}
 
-\section{Sicherheit}
+\subsection{Sicherheit}
 \paragraph{Überprüfung mit Angabe von Referenzen} Gespeicherte Telefonnummern und eine Versammlungszugehörigkeit fallen weg. Somit sollte einfach nicht jeder ein Login errichten können. Dies wird dadurch verhindert indem er 3 Pioniere mit denen er zu tun hat angibt, dies wird überprüft und das Profile wird frei gegeben. Da keine sensitiven Daten vorhanden sind kann auf eine Verschlüsslung verzichtet werden.
