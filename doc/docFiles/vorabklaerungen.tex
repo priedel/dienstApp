@@ -2,13 +2,13 @@
 
 \section{Zusammenfassung}
 \begin{tabularx}{\textwidth}{lX}
-Task  & Stand \\\hline
-Bedürfnis & das Bedürfnis ist vorhanden \\
-Teilnahme Abschätzung für Gelingen & Teilnehmerzahl $n \geqslant 100$, Pioniere $n_p \geqslant 50$\\
-Aufwand & \texttodo{ToDo Cristian oder Anna-Nina} \\
-Installation auf Android - und iOS Systeme & Android stellt kein Problem dar, bei AppStore fallen zusätzliche Kosten an, ausserdem ist man der Willkür von Apple ausgesetzt. Da aber viele ein iPhone besitzen muss auch für iOS eine App zur Verfügung gestellt werden.\\
-Datenbank &\texttodo{Anna-Nina bitte eine Struktur vorschlagen, Aufwand, Unterhalt, Kosten und Risiken}\\
-Sicherheit &  \texttodo{Philipp und Sam Besprechung des Aufbaus der App mit Einbezug von Theokratischen Argumenten}\\
+Task  & Stand\\\hline \vspace{-0.5em}&\\\vspace{0.5em}
+Bedürfnis & das Bedürfnis ist vorhanden \\\vspace{0.5em}
+Teilnahme Abschätzung für Gelingen & Teilnehmerzahl $n \geqslant 100$, Pioniere $n_p \geqslant 50$\\\vspace{0.5em}
+Aufwand & Abschätzung mit der Delphi Methode \texttodo{Anna-Nina, Esther, Cristian}\\\vspace{0.5em}
+Installation auf Android - und iOS Systeme & Android stellt kein Problem dar, bei AppStore fallen zusätzliche Kosten an, ausserdem ist man der Willkür von Apple ausgesetzt. Da aber viele ein iPhone besitzen muss auch für iOS eine App zur Verfügung gestellt werden.\\\vspace{0.5em}
+Datenbank &\texttodo{Anna-Nina SQL OK? bessere varianten?  SQL Server Express geeignet? }\\\vspace{0.5em}
+Sicherheit & Manuelle Profile Freigabe mit 3 Pionieren als Referenz. Keine Verschlüsselung da keine sensitiven Daten.\\
 \end{tabularx}
 
 \section{Bedürfnis}
@@ -19,7 +19,7 @@ Sicherheit &  \texttodo{Philipp und Sam Besprechung des Aufbaus der App mit Einb
 \paragraph{Wie viele Absagen braucht es pro Woche damit die Applikation einen Nutzen hat} Es gibt pro Tag in etwa die drei Hauptterminzeiten Morgen, Nachmittag und Abend. Samstag Abend wird weggelassen und sonntags zählt nur als eine Terminzeit. Somit ergeben sich 18 Termine pro Woche. Damit es öfters vorkommt das bei den Hauptterminzeiten eine Übereinstimmung mit $\pm\varepsilon$ gegeben ist, sollte mit 60 bis 100 Absagen oder nicht Finden einer Abmachung pro Woche gerechnet werden. Dies sollte mit einer Teilnehmerzahl $n \geqslant 100$ und davon $n_p \geqslant 50$ Pionieren erreicht werden.
 
 \section{Aufwand}
-\paragraph{Aufwand für Programmierung und Unterhalt} Der Aufwand muss im Verhältnis zum Nutzen stehen. \texttodo{Cristian oder Anna-Nina: bitte hier eine Zeitabschätzung getrennt nach erstellen der Applikation sowie deren Unterhalt.}
+\paragraph{Aufwand für Programmierung und Unterhalt} Der Aufwand muss im Verhältnis zum Nutzen stehen. Die Datenbank Implementation benötigt keinen grossen Zeitaufwand. Für die Applikation und das GUI wird erst später eine Abschätzung erfolgen, wenn die Struktur genauer skizziert wurde.
 
 \section{Installation der App}
 \paragraph{Bedignungen für die Installation auf Android - und iOS Systeme}
@@ -30,13 +30,11 @@ Sicherheit &  \texttodo{Philipp und Sam Besprechung des Aufbaus der App mit Einb
 Trotz Mehraufwand und zusätzlichen Kosten muss wegen der hohen Anzahl von iPhone Besitzern auch für iOS eine App zur Verfügung gestellt werden.
 
 \section{Datenbank}
-\paragraph{Nutzen und Aufwand einer Datenbank}Da Profile erstellt werden müssen, damit eine effiziente Zuordnung gemacht werden kann muss eine Datenbank Struktur vorhanden sein.
-
-\texttodo{Anna-Nina bitte eine Struktur vorschlagen, Aufwand, Unterhalt, Kosten und Risiken}
+\paragraph{Nutzen und Aufwand einer Datenbank}\begin{itemize}
+\item Da Profile erstellt werden müssen, damit eine effiziente Zuordnung gemacht werden kann muss eine Datenbank Struktur vorhanden sein.
+\item SQL Server Express bietet einen gratis Dienst für das Ablegen der Datenbank \cite{SQL}.
+\item Laut Esther kann mit einer sehr groben Abschätzung bei dieser Komplexität mit 1 bis 2 Arbeitstagen gerechnet werden.
+\end{itemize}
 
 \section{Sicherheit}
-\paragraph{Abklärungen zur Sicherheit in Abhängikeit der Daten} Die Sicherheitsanforderungen hängen primär auch von den gespeicherten Daten ab. Die gespeicherten Attribute eines Verkündigers müssen noch evaluiert werden, dies wird von Samuel Vontobel und Philipp Riedel mit eventueller Einbeziehung von weiteren Brüdern durchgeführt. Die Attribute sind wiederum abhängig von der Auslegung der Applikation. Telefonnummern werden zum Beispiel nicht benötigt wenn eine Appinterner Kommunikationsablauf zur Verabredung bereitgestellt wird. Namen würden z.B. nicht benötigt wenn eine Anonyme Zuweisung erfolgt. Eine Versammlungszugehörigkeit wird nur dann benötigt, wenn bei einer automatischen Zuteilung die eigene Versammlung als Zuteilungspriorität gilt usw. 
-
-\texttodo{Philipp und Sam Besprechung des Aufbaus der App mit Einbezug von Theokratischen Argumenten}\newline
-
-\texttodo{Danach: Anna-Nina: Sicherheitsvorschlag, Verschlüsselung? Profile mit Passwort versehen? usw.}
+\paragraph{Überprüfung mit Angabe von Referenzen} Gespeicherte Telefonnummern und eine Versammlungszugehörigkeit fallen weg. Somit sollte einfach nicht jeder ein Login errichten können. Dies wird dadurch verhindert indem er 3 Pioniere mit denen er zu tun hat angibt, dies wird überprüft und das Profile wird frei gegeben. Da keine sensitiven Daten vorhanden sind kann auf eine Verschlüsslung verzichtet werden.
