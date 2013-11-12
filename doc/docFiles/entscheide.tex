@@ -6,7 +6,7 @@
 \begin{itemize}
 \item Wenn es möglich ist bei iOS und/oder Android ein generelles blockieren der Preisgabe des Standortes einzustellen muss der User die Möglichkeit bekommen manuelle seinen Standort einzugeben
 \end{itemize}
-\item Ein geschicktes Zeit Handling, ähnlich dem Trolley-System.
+\item Ein geschicktes Zeithydxsandling, ähnlich dem Trolley-System.
 \item Verabredung Handling, integriert beim Zeit Handling.
 \item Auch bei Taskabschuss mit einem Taskmanagertool muss die Applikation ansprechbar bleiben, damit eine neu eingetroffene Zeitübereinstimmung ein Pop-up generieren kann.
 \end{itemize}
@@ -19,14 +19,14 @@
 \subsection{Technische}
 \begin{tabularx}{\textwidth}{X|X}
 Frage & Entscheid \\\hline
-Ablehnen wie handeln & \\\hline
-eine Verabredungskommunikation die den Dialog standardisiert und vereinfacht bereitstellen & \\\hline
-Handling von keine Reaktion & \\\hline
-Handling von $n_v>2$ bei geraden und ungeraden $n_v$ & \\\hline
-Verabredungsabwicklung & \\\hline
-Statistik mitführen & \\\hline
-Zeitwahl auf x min begrenzen & \\\hline
-Wählbar ob Verabredungskommunikation oder Telefonnummer Bekanntgabe & \\
+Ablehnen wie handeln & flag setzten damit nicht gleiche Zuteilung vorgenommen wird\\\hline
+eine Verabredungskommunikation die den Dialog standardisiert und vereinfacht bereitstellen & ja möglichst viel in Zeithandling integrieren\\\hline
+Handling von keine Reaktion & Wenn eine neue Übereinstimmung hinzukommt alte löschen (mit Mitteilung) falls die alte länger als $t_tol$ nicht bestätigt wurde\\\hline
+Handling von $n_v>2$ bei geraden und ungeraden $n_v$ & mit Gruppen Ansatz lösen \\\hline
+Verabredungsabwicklung & möglichst viel in Zeithandling integrieren\\\hline
+Statistik mitführen & ja nur für admin\\\hline
+Zeitwahl auf x min begrenzen & nein, mit vorgegebenem Zeitraster arbeiten, ähnlich wie bei trolley\\\hline
+Wählbar ob Verabredungskommunikation oder Telefonnummer Bekanntgabe & nein, nur Verabredungskommunikation wenn nicht bereits durch Workflow gemeistert werden kann\\
 \end{tabularx}
 
 
@@ -34,9 +34,12 @@ Wählbar ob Verabredungskommunikation oder Telefonnummer Bekanntgabe & \\
 
 \begin{tabularx}{\textwidth}{X|X}
 Frage & Entscheid \\\hline
-Wie wird sichergestellt das nicht langfristige Verabredungen ausschliesslich über die Applikation getätigt werden, damit nicht Ungerechtigkeiten gegenüber solchen, die nicht mit machen können oder wollen, entstehen & \\\hline
-Handhabung der Verteilung der App, Gefahr das sich ausgeschlossene einschleichen und ähnliches & \\\hline
-Sichtbarkeit der Namen, Gefahr das spezielle Charakteren öfters abgelehnt werden, diese dies auf irgend eine Art und Weise herausfinden und sich gemobbt fühlen & \\\hline
-eine Suchfunktion integrieren, damit solche zur Verfügung stehen könnten, sich solchen die niemanden finden anbieten können & \\
+Wie wird sichergestellt das nicht langfristige Verabredungen ausschliesslich über die Applikation getätigt werden, damit nicht Ungerechtigkeiten gegenüber solchen, die nicht mit machen können oder wollen, entstehen & Wählbarkeit der Termine auf 5 Tage begrenzen. Mitgeführte Statistik würde individuelle Tendenzen aufzeigen $\rightarrow$ persönliches Nachfragen \\\hline
+Handhabung der Verteilung der App, Gefahr das sich ausgeschlossene einschleichen und ähnliches & sehr kleine Wahrscheinlichkeit, ausserdem wird eine Profil Freigabe mit Angabe von 3 Pionieren implementiert\\\hline
+Sichtbarkeit der Namen, Gefahr das spezielle Charakteren öfters abgelehnt werden, diese dies auf irgend eine Art und Weise herausfinden und sich gemobbt fühlen & herausfinden ist nicht vermeidbar, mit Gruppen Möglichkeit sollte selten jemand bei ungerader Anzahl übrig bleiben\\\hline
+eine Suchfunktion integrieren, damit solche zur Verfügung stehen könnten, sich solchen die niemanden finden anbieten können & wenn Implementation nicht zu aufwendig $\rightarrow$ implementieren\\\hline
+Gruppen Tätigkeit & implementieren \\\hline
+Bei regulärer Abmachung sich in App für Gruppentätigkeit zu Verfügung stellen & erst nach erfolgreichem Start implementieren\\\hline
+Treffpunkte vorschlagen & erst nach erfolgreichem Start implementieren\\
 \end{tabularx}
 
