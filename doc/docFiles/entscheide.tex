@@ -8,7 +8,7 @@
 \end{itemize}
 \item Ein geschicktes Zeit Handling, ähnlich dem Trolley-System.
 \item Verabredung Handling, integriert beim Zeit Handling.
-\item Auch bei Taskabschuss mit einem Taskmanagertool muss die Applikation ansprechbar bleiben, damit eine neu eingetroffene Zeitübereinstimmung ein Pop-up generieren kann.
+\item Auch bei Taskabschuss mit einem Taskmanagertool muss die Applikation ansprechbar bleiben, damit eine neu eingetroffene Zeitübereinstimmung ein Push-up generieren kann.
 \end{itemize}
 
 
@@ -25,9 +25,10 @@ eine Verabredungskommunikation die den Dialog standardisiert und vereinfacht ber
 Handling von keine Reaktion & Wenn eine neue Übereinstimmung hinzukommt alte löschen (mit Mitteilung) falls die alte länger als $t_tol$ nicht bestätigt wurde\\\hline
 Handling von $n_v>2$ bei geraden und ungeraden $n_v$ & mit Gruppen Ansatz lösen \\\hline
 Verabredungsabwicklung & möglichst viel in Zeit Handling integrieren\\\hline
-Statistik mitführen & ja nur für admin\\\hline
+Statistik mitführen & ja nur für die Verantwortlichen der App\\\hline
 Zeitwahl auf x min begrenzen & nein, mit vorgegebenem Zeitraster arbeiten, ähnlich wie bei trolley\\\hline
-Wählbar ob Verabredungskommunikation oder Telefonnummer Bekanntgabe & nein, nur Verabredungskommunikation wenn nicht bereits durch Workflow gemeistert werden kann\\
+Wählbar ob Verabredungskommunikation oder Telefonnummer Bekanntgabe & nein, nur Verabredungskommunikation wenn nicht bereits durch Workflow gemeistert werden kann\\\hline
+welcher Radius ist ok für Abmachungen& evtl. individuell oder noch zu definieren
 \end{tabularx}
 
 
@@ -36,7 +37,7 @@ Wählbar ob Verabredungskommunikation oder Telefonnummer Bekanntgabe & nein, nur
 \begin{tabularx}{\textwidth}{X|X}
 Frage & Entscheid \\\hline
 Wie wird sichergestellt das nicht langfristige Verabredungen ausschliesslich über die Applikation getätigt werden, damit nicht Ungerechtigkeiten gegenüber solchen, die nicht mit machen können oder wollen, entstehen & Wählbarkeit der Termine auf 5 Tage begrenzen. Mitgeführte Statistik würde individuelle Tendenzen aufzeigen $\rightarrow$ persönliches Nachfragen \\\hline
-Handhabung der Verteilung der App, Gefahr das sich ausgeschlossene einschleichen und ähnliches & sehr kleine Wahrscheinlichkeit, ausserdem wird eine Profil Freigabe mit Angabe von 3 Pionieren implementiert\\\hline
+Handhabung der Verteilung der App, Gefahr das sich ausgeschlossene einschleichen und ähnliches & sehr kleine Wahrscheinlichkeit, durch Profil Freigabe wird das Risiko weiter gesenkt\\\hline
 Sichtbarkeit der Namen, Gefahr das spezielle Charakteren öfters abgelehnt werden, diese dies auf irgend eine Art und Weise herausfinden und sich gemobbt fühlen & herausfinden ist nicht vermeidbar, mit Gruppen Möglichkeit sollte selten jemand bei ungerader Anzahl übrig bleiben\\\hline
 eine Suchfunktion integrieren, damit solche zur Verfügung stehen könnten, sich solchen die niemanden finden anbieten können & wenn Implementation nicht zu aufwendig $\rightarrow$ implementieren\\\hline
 Gruppen Tätigkeit & implementieren \\\hline

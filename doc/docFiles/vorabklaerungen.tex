@@ -1,14 +1,15 @@
 \section{Vorabklärungen}
 
 \subsection{Zusammenfassung}
-\begin{tabularx}{\textwidth}{l|X}
+\begin{tabularx}{\textwidth}{X|X}
 Task  & Stand\\\hline
 Bedürfnis & das Bedürfnis ist vorhanden \\\hline
 Teilnahme Abschätzung für Gelingen & Teilnehmerzahl $n \geqslant 100$, Pioniere $n_p \geqslant 50$\\\hline
-Aufwand & Abschätzung mit der Delphi Methode \texttodo{evtl. Anna-Nina, Esther, Cristian, Dominique}\\\hline
-Installation auf Android - und iOS Systeme & Android stellt kein Problem dar, bei AppStore fallen zusätzliche Kosten an, ausserdem ist man der Willkür von Apple ausgesetzt. Da aber viele ein iPhone besitzen muss auch für iOS eine App zur Verfügung gestellt werden.\\\hline
+Aufwand & Abschätzung nach erst Entwurf GUI\\\hline
+Installation auf Android - und iOS Systeme, Blackberry usw. & Android stellt kein Problem dar, bei AppStore fallen zusätzliche Kosten an, ausserdem ist man der Willkür von Apple ausgesetzt. Da aber viele ein iPhone besitzen muss auch für iOS eine App zur Verfügung gestellt werden.\\\hline
 Datenbank & Hängt von der gewählten Plattform der Programmierung ab\\\hline
-Sicherheit & Manuelle Profile Freigabe mit 3 Pionieren als Referenz. Keine Verschlüsselung da keine sensitiven Daten.\\
+Sicherheit (für uns)& Manuelle Profile Freigabe mit 3 Pionieren als Referenz. \texttodo{bessere Lösung willkommen}\\\hline
+Sicherheit (Applikation)& JS security (Siehe GWT Doku)\\
 \end{tabularx}
 
 \subsection{Bedürfnis}
@@ -24,8 +25,8 @@ Sicherheit & Manuelle Profile Freigabe mit 3 Pionieren als Referenz. Keine Versc
 \subsection{Installation der App}
 \paragraph{Bedignungen für die Installation auf Android - und iOS Systeme}
 \begin{itemize}
-\item Bei einem Android System ist es kein Problem die Applikation auf ein File-Server zum Download anzubieten. Der Nutzer muss nur bei der Installation zustimmen, dass er die unbekannte App als vertrauenswürdig hält.
-\item Bei einem iOS Stystem muss über den AppStore gegangen werden.  Zum Veröffentlichen der App im App Store ist eine kostenpflichtige Registrierung beim iOS Developer Program notwendig. Apple unterzieht jede eingesandte App einer Überprüfung und erteilt anschließend in der Regel die Freigabe für den App Store. Dies ist die einzige Möglichkeit die App zu verbreiten wenn die Apple Geräte keinem Jailbreak unterzogen wurden \cite{appStore}. Für das Anbieten von Apps im AppStore fallen Kosten von 99\$ an.
+\item Bei einem Android System ist es kein Problem die Applikation auf ein File-Server zum Download anzubieten. Der Nutzer muss nur bei der Installation zustimmen, dass er die unbekannte App als vertrauenswürdig hält. Oder mit 25 CHF via google Play anbieten.
+\item Bei einem iOS Stystem muss über den AppStore gegangen werden.  Zum Veröffentlichen der App im App Store ist eine kostenpflichtige Registrierung beim iOS Developer Program notwendig. Apple unterzieht jede eingesandte App einer Überprüfung und erteilt anschließend in der Regel die Freigabe für den App Store. Dies ist die einzige Möglichkeit die App zu verbreiten wenn die Apple Geräte keinem Jailbreak unterzogen wurden \cite{appStore}. Für das Anbieten von Apps im AppStore fallen Kosten von 99\$ an, mit der Begrenzung von 100 Downloads.
 \end{itemize}
 Trotz Mehraufwand und zusätzlichen Kosten muss wegen der hohen Anzahl von iPhone Besitzern auch für iOS eine App zur Verfügung gestellt werden.
 
